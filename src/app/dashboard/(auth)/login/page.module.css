@@ -61,10 +61,10 @@
   color: rgb(61, 61, 61);
 }
 
-.google {
+.github {
   background-color: rgba(228, 97, 50, 0.72);
 }
 
-.google:hover {
+.github:hover {
   background-color: rgba(228, 97, 50, 0.803);
 }
