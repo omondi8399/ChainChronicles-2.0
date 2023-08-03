@@ -3,15 +3,21 @@
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
 
 .selectTitle {
   margin: 20px 0px;
+  font-size: 40px; 
 }
 
 .items {
   display: flex;
-  gap: 50px;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: center; 
 }
 
 .item {
@@ -43,4 +49,28 @@
 
 .item:hover .title {
   color: #53c28b;
+}
+
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 60px; 
+  }
+
+  .selectTitle {
+    font-size: 30px;
+  }
+
+  .items {
+    justify-content: space-around; 
+  }
+
+  .item {
+    width: 250px; 
+    height: 350px; 
+  }
+
+  .title {
+    font-size: 30px; 
+  }
 }
