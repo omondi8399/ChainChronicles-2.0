@@ -2,35 +2,26 @@
 }
 
 .title {
-  font-size: 60px;
-  margin-bottom: 100px;
+  font-size: 40px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
 .content {
   display: flex;
-  align-items: center;
-  gap: 100px;
+  flex-direction: column;
+  gap: 50px; 
 }
 
 .imgContainer {
   flex: 1;
-  height: 500px;
+  height: 300px;
   position: relative;
 }
 
 .image {
   object-fit: contain;
-  /* animation: move 3s infinite ease alternate; */
-}
-
-@keyframes move {
-  from {
-    transform: translateY(-15px);
-  }
-  to {
-    transform: translateY(0px) scale(1.03);
-  }
+  animation: move 1s infinite alternate;
 }
 
 .form {
@@ -42,12 +33,33 @@
 
 .input,
 .textArea {
-  padding: 20px;
+  padding: 15px;
+  font-size: 18px;
   background-color: transparent;
-  border: none;
-  outline: none;
-  color: #bbb;
-  border: 3px solid #bbb;
-  font-size: 20px;
-  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 60px;
+    margin-bottom: 100px; 
+  }
+
+  .content {
+    flex-direction: row; 
+    gap: 100px;
+  }
+
+  .imgContainer {
+    height: 500px; 
+  }
+
+  .image {
+    animation: none; 
+  }
+
+  .input,
+  .textArea {
+    padding: 20px;
+    font-size: 20px;
+  }
 }

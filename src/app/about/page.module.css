@@ -23,19 +23,34 @@
 
 .textContainer {
   display: flex;
-  gap: 100px;
+  flex-direction: column; 
+  gap: 30px;
 }
 
 .item {
-  flex: 1;
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px; 
 }
 
 .desc {
   font-size: 18px;
   font-weight: 300;
   text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .textContainer {
+    flex-direction: row; 
+    gap: 100px; 
+  }
+
+  .imgContainer {
+    height: 400px; 
+  }
+
+  .item {
+    margin-top: 50px; 
+  }
 }
